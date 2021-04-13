@@ -3,7 +3,7 @@ C# for Interview
 
 private int FindWeekNumber()
     {
-        DateTimeFormatInfo dfi = DateTimeFormatInfo.CurrentInfo;
-        System.Globalization.Calendar cal = dfi.Calendar;
-        return cal.GetWeekOfYear(nowDT, dfi.CalendarWeekRule, dfi.FirstDayOfWeek);
-    }//end FindWeekNumber()
+        DateTimeFormatInfo CurrInfo = DateTimeFormatInfo.CurrentInfo;
+        System.Globalization.Calendar cal = CurrInfo.Calendar;
+        return cal.GetWeekOfYear(DTnow, CurrInfo.CalendarWeekRule, CurrInfo.FirstDayOfWeek);
+    }
